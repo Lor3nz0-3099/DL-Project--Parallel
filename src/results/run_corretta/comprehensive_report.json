@@ -1,6 +1,6 @@
 {
     "execution_info": {
-        "timestamp": "2026-01-12T13:16:44.951246",
+        "timestamp": "2026-01-12T19:41:22.935862",
         "execution_id": "20260111_194622",
         "config": {
             "MAX_ENCODER_LENGTH": 168,
@@ -99,17 +99,17 @@
         "status": "completed",
         "n_folds": 5,
         "metrics": {
-            "mean_mape": "34.5597",
-            "std_mape": "25.176052",
-            "mean_mae": 3.2737986564636232,
-            "std_mae": 1.8456995412509025,
-            "mean_rmse": 5.855040778561056,
-            "std_rmse": 2.8569854782803263,
-            "mean_r2": 0.7707746148109436,
-            "std_r2": 0.21696735807250275
+            "mean_mape": NaN,
+            "std_mape": NaN,
+            "mean_mae": NaN,
+            "std_mae": NaN,
+            "mean_rmse": NaN,
+            "std_rmse": NaN,
+            "mean_r2": NaN,
+            "std_r2": NaN
         },
-        "best_fold_idx": "4",
-        "best_fold_mae": 0.9746212959289551
+        "best_fold_idx": null,
+        "best_fold_mae": NaN
     },
     "final_model": {
         "status": "completed",
@@ -188,7 +188,7 @@
         {
             "path": "results\\run_corretta\\comprehensive_report.json",
             "description": "This comprehensive report",
-            "size_mb": 0.0072727203369140625
+            "size_mb": 0.007462501525878906
         },
         {
             "path": "results\\run_corretta\\figures",
