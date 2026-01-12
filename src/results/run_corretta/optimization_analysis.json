@@ -1,0 +1,27 @@
+{
+    "study_name": "TFT_PV_Optimization_20260111_194622",
+    "n_trials": 5,
+    "completed_trials": 3,
+    "best_trial_number": 0,
+    "best_mae": 3.8938639879226686,
+    "best_params": {
+        "hidden_size": 128,
+        "lstm_layers": 1,
+        "attention_head_size": 4,
+        "hidden_continuous_size": 32,
+        "dropout": 0.16370173320348286,
+        "gradient_clip_val": 0.4454674376934912,
+        "learning_rate": 0.00023270677083837802,
+        "batch_size": 64,
+        "patience": 11,
+        "weight_decay": 6.847920095574779e-05
+    },
+    "mae_statistics": {
+        "min": 3.8938639879226686,
+        "max": 5.292619395256042,
+        "mean": 4.7638296763102215,
+        "std": 0.6199085706669262,
+        "median": 5.1050056457519535
+    },
+    "analysis_timestamp": "2026-01-12T13:39:21.861240"
+}

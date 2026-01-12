@@ -1,0 +1,39 @@
+{
+    "static_categoricals": [
+        "group_id"
+    ],
+    "time_varying_known_reals": [
+        "time_idx",
+        "hour_sin",
+        "hour_cos",
+        "day_sin",
+        "day_cos",
+        "month_sin",
+        "month_cos",
+        "dow_sin",
+        "dow_cos",
+        "wind_sin",
+        "wind_cos"
+    ],
+    "time_varying_unknown_reals": [
+        "power_kw",
+        "lat",
+        "lon",
+        "temp",
+        "dew_point",
+        "pressure",
+        "humidity",
+        "wind_speed",
+        "wind_deg",
+        "rain_1h",
+        "clouds_all",
+        "Dhi",
+        "Dni",
+        "Ghi",
+        "hour",
+        "day_of_year",
+        "month",
+        "day_of_week"
+    ],
+    "total_features": 28
+}

@@ -1,0 +1,10 @@
+{
+    "Dhi": "Normalizzato per costante solare (1361 W/m\u00b2)",
+    "Dni": "Normalizzato per costante solare (1361 W/m\u00b2)",
+    "Ghi": "Normalizzato per costante solare (1361 W/m\u00b2)",
+    "temp": "Convertito da Kelvin a Celsius",
+    "dew_point": "Convertito da Kelvin a Celsius",
+    "humidity": "Convertito da % (0-100) a frazione (0-1)",
+    "clouds_all": "Convertito da % (0-100) a frazione (0-1)",
+    "rain_1h": "Log1p transform (skewness: 5.84)"
+}

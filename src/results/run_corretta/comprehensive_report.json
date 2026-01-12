@@ -1,0 +1,224 @@
+{
+    "execution_info": {
+        "timestamp": "2026-01-12T13:16:44.951246",
+        "execution_id": "20260111_194622",
+        "config": {
+            "MAX_ENCODER_LENGTH": 168,
+            "MAX_PREDICTION_LENGTH": 24,
+            "N_FOLDS": 5,
+            "VAL_RATIO": 0.2,
+            "N_TRIALS": 5,
+            "OPTUNA_TIMEOUT_HOURS": 6,
+            "DAYLIGHT_START_HOUR": 6,
+            "DAYLIGHT_END_HOUR": 19,
+            "EPS_PV": 5.0,
+            "MAX_EPOCHS_TUNING": 30,
+            "MAX_EPOCHS_FINAL": 150,
+            "EARLY_STOPPING_PATIENCE": 15,
+            "SEED": 42,
+            "ACCELERATOR": "auto",
+            "RESULTS_DIR": "results\\run_corretta",
+            "FIGURES_DIR": "results\\run_corretta\\figures",
+            "MODELS_DIR": "results\\run_corretta\\models",
+            "TIMESTAMP": "20260111_194622",
+            "RUN_TUNING_AND_CV": false,
+            "RUN_FINAL_TRAINING": false,
+            "USE_EXISTING_RESULTS": true,
+            "REFERENCE_RUN_FOLDER": "run_corretta"
+        },
+        "data_info": {
+            "total_samples": 17317,
+            "date_range": {
+                "start": "2010-07-01T00:00:00",
+                "end": "2012-06-30T13:00:00"
+            },
+            "features": {
+                "static_categoricals": [
+                    "group_id"
+                ],
+                "time_varying_known": [
+                    "time_idx",
+                    "hour_sin",
+                    "hour_cos",
+                    "day_sin",
+                    "day_cos",
+                    "month_sin",
+                    "month_cos",
+                    "dow_sin",
+                    "dow_cos",
+                    "wind_sin",
+                    "wind_cos"
+                ],
+                "time_varying_unknown": [
+                    "power_kw",
+                    "lat",
+                    "lon",
+                    "temp",
+                    "dew_point",
+                    "pressure",
+                    "humidity",
+                    "wind_speed",
+                    "wind_deg",
+                    "rain_1h",
+                    "clouds_all",
+                    "Dhi",
+                    "Dni",
+                    "Ghi",
+                    "hour",
+                    "day_of_year",
+                    "month",
+                    "day_of_week"
+                ],
+                "total_features": 29
+            }
+        }
+    },
+    "hyperparameter_optimization": {
+        "status": "completed",
+        "n_trials": 5,
+        "best_trial_number": 0,
+        "best_value": 3.8938639879226686,
+        "best_params": {
+            "hidden_size": 128,
+            "lstm_layers": 1,
+            "attention_head_size": 4,
+            "hidden_continuous_size": 32,
+            "dropout": 0.16370173320348286,
+            "gradient_clip_val": 0.4454674376934912,
+            "learning_rate": 0.00023270677083837802,
+            "batch_size": 64,
+            "patience": 11,
+            "weight_decay": 6.847920095574779e-05
+        },
+        "optimization_duration": 26292.173828840256,
+        "pruned_trials": 2,
+        "complete_trials": 3,
+        "failed_trials": 0
+    },
+    "cross_validation": {
+        "status": "completed",
+        "n_folds": 5,
+        "metrics": {
+            "mean_mape": "34.5597",
+            "std_mape": "25.176052",
+            "mean_mae": 3.2737986564636232,
+            "std_mae": 1.8456995412509025,
+            "mean_rmse": 5.855040778561056,
+            "std_rmse": 2.8569854782803263,
+            "mean_r2": 0.7707746148109436,
+            "std_r2": 0.21696735807250275
+        },
+        "best_fold_idx": "4",
+        "best_fold_mae": 0.9746212959289551
+    },
+    "final_model": {
+        "status": "completed",
+        "best_fold_idx": 5,
+        "model_path": "results\\run_20260111_194622\\models\\best_tft_fold_5.ckpt",
+        "best_metrics": {
+            "mae": 0.9746212959289551,
+            "rmse": 2.2418641179514323,
+            "r2": 0.9795775413513184,
+            "mape_raw": "75.58071",
+            "mape_masked": "37.533356",
+            "valid_points_mape": "3",
+            "total_points": 24
+        },
+        "hyperparameters": {
+            "hidden_size": 128,
+            "lstm_layers": 1,
+            "attention_head_size": 4,
+            "hidden_continuous_size": 32,
+            "dropout": 0.16370173320348286,
+            "gradient_clip_val": 0.4454674376934912,
+            "learning_rate": 0.00023270677083837802,
+            "batch_size": 64,
+            "patience": 11,
+            "weight_decay": 6.847920095574779e-05
+        },
+        "successful_folds": 5,
+        "total_folds": 5
+    },
+    "validation_results": {
+        "status": "completed",
+        "total_metrics": {
+            "mae": 0.9744537472724915,
+            "rmse": 2.2416443914656283,
+            "r2": 0.9795815348625183,
+            "mape_raw": "75.67353",
+            "mape_masked": "51.09598",
+            "valid_points_mape": "2",
+            "total_points": 24
+        },
+        "n_predictions": 24,
+        "step_metrics_summary": {
+            "best_step_mse": "0.0",
+            "worst_step_mse": "89.2039"
+        }
+    },
+    "interpretability": {
+        "status": "skipped or not available"
+    },
+    "artifacts_saved": [
+        {
+            "path": "results\\run_corretta\\optuna_study.pkl",
+            "description": "Hyperparameter optimization study",
+            "size_mb": 0.014730453491210938
+        },
+        {
+            "path": "results\\run_corretta\\best_hyperparams.json",
+            "description": "Best hyperparameters",
+            "size_mb": 0.0003185272216796875
+        },
+        {
+            "path": "results\\run_corretta\\cv_results.pkl",
+            "description": "Cross-validation results",
+            "size_mb": 0.018489837646484375
+        },
+        {
+            "path": "results\\run_corretta\\fold_results.pkl",
+            "description": "Fold training results",
+            "size_mb": 0.017991065979003906
+        },
+        {
+            "path": "results\\run_corretta\\validation_results.pkl",
+            "description": "Validation results",
+            "size_mb": 0.0029802322387695312
+        },
+        {
+            "path": "results\\run_corretta\\comprehensive_report.json",
+            "description": "This comprehensive report",
+            "size_mb": 0.0072727203369140625
+        },
+        {
+            "path": "results\\run_corretta\\figures",
+            "description": "Visualization plots directory",
+            "size_mb": "directory"
+        },
+        {
+            "path": "results\\run_corretta\\models\\best_tft_fold_1.ckpt",
+            "description": "Trained TFT model (best_tft_fold_1.ckpt)",
+            "size_mb": 16.5748233795166
+        },
+        {
+            "path": "results\\run_corretta\\models\\best_tft_fold_2.ckpt",
+            "description": "Trained TFT model (best_tft_fold_2.ckpt)",
+            "size_mb": 16.57488441467285
+        },
+        {
+            "path": "results\\run_corretta\\models\\best_tft_fold_3.ckpt",
+            "description": "Trained TFT model (best_tft_fold_3.ckpt)",
+            "size_mb": 16.57488441467285
+        },
+        {
+            "path": "results\\run_corretta\\models\\best_tft_fold_4.ckpt",
+            "description": "Trained TFT model (best_tft_fold_4.ckpt)",
+            "size_mb": 16.5748233795166
+        },
+        {
+            "path": "results\\run_corretta\\models\\best_tft_fold_5.ckpt",
+            "description": "Trained TFT model (best_tft_fold_5.ckpt)",
+            "size_mb": 16.5748233795166
+        }
+    ]
+}
