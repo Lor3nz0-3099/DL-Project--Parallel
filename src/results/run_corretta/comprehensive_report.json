@@ -1,6 +1,6 @@
 {
     "execution_info": {
-        "timestamp": "2026-01-14T14:02:27.911056",
+        "timestamp": "2026-01-14T17:05:51.592873",
         "execution_id": "20260111_194622",
         "config": {
             "MAX_ENCODER_LENGTH": 168,
@@ -182,7 +182,7 @@
         {
             "path": "results\\run_corretta\\comprehensive_report.json",
             "description": "This comprehensive report",
-            "size_mb": 0.0073490142822265625
+            "size_mb": 0.007231712341308594
         },
         {
             "path": "results\\run_corretta\\figures",
