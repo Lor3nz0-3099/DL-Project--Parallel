@@ -1,6 +1,6 @@
 {
     "execution_info": {
-        "timestamp": "2026-01-12T19:41:22.935862",
+        "timestamp": "2026-01-14T14:02:27.911056",
         "execution_id": "20260111_194622",
         "config": {
             "MAX_ENCODER_LENGTH": 168,
@@ -96,20 +96,7 @@
         "failed_trials": 0
     },
     "cross_validation": {
-        "status": "completed",
-        "n_folds": 5,
-        "metrics": {
-            "mean_mape": NaN,
-            "std_mape": NaN,
-            "mean_mae": NaN,
-            "std_mae": NaN,
-            "mean_rmse": NaN,
-            "std_rmse": NaN,
-            "mean_r2": NaN,
-            "std_r2": NaN
-        },
-        "best_fold_idx": null,
-        "best_fold_mae": NaN
+        "status": "skipped or not available"
     },
     "final_model": {
         "status": "completed",
@@ -157,7 +144,14 @@
         }
     },
     "interpretability": {
-        "status": "skipped or not available"
+        "status": "completed",
+        "sample_size": "N/A",
+        "components_analyzed": {
+            "attention": true,
+            "static_importance": false,
+            "encoder_importance": false,
+            "decoder_importance": false
+        }
     },
     "artifacts_saved": [
         {
@@ -188,7 +182,7 @@
         {
             "path": "results\\run_corretta\\comprehensive_report.json",
             "description": "This comprehensive report",
-            "size_mb": 0.007462501525878906
+            "size_mb": 0.0073490142822265625
         },
         {
             "path": "results\\run_corretta\\figures",

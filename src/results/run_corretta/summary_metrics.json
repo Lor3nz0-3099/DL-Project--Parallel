@@ -11,7 +11,8 @@
             2.647656202316284,
             2.6531894207000732,
             0.9746212959289551
-        ]
+        ],
+        "n_valid": 5
     },
     "rmse": {
         "mean": 5.855040778561056,
@@ -22,7 +23,8 @@
             4.755786984497828,
             4.906234449617076,
             2.2418641179514323
-        ]
+        ],
+        "n_valid": 5
     },
     "r2": {
         "mean": 0.7707746148109436,
@@ -33,7 +35,42 @@
             0.9164071083068848,
             0.7022830247879028,
             0.9795775413513184
-        ]
+        ],
+        "n_valid": 5
     },
     "mape_masked": {
-        "mean": 
+        "mean": 34.559700870513915,
+        "std": 25.1760523152619,
+        "values": [
+            5.991531848907471,
+            36.991302490234375,
+            13.969646453857422,
+            78.31266784667969,
+            37.533355712890625
+        ],
+        "n_valid": 5
+    },
+    "best_fold": {
+        "fold_number": 5,
+        "mae": 0.9746212959289551,
+        "rmse": 2.2418641179514323,
+        "r2": 0.9795775413513184,
+        "mape_masked": 37.533355712890625
+    },
+    "best_hyperparameters": {
+        "hidden_size": 128,
+        "lstm_layers": 1,
+        "attention_head_size": 4,
+        "hidden_continuous_size": 32,
+        "dropout": 0.16370173320348286,
+        "gradient_clip_val": 0.4454674376934912,
+        "learning_rate": 0.00023270677083837802,
+        "batch_size": 64,
+        "patience": 11,
+        "weight_decay": 6.847920095574779e-05
+    },
+    "correction_timestamp": "2026-01-14T12:46:25.093237",
+    "corrected_from": "fold_results.pkl",
+    "correction_version": "v2_fixed_mape_extraction",
+    "original_training_timestamp": null
+}
