@@ -1,6 +1,6 @@
 {
     "execution_info": {
-        "timestamp": "2026-01-14T17:05:51.592873",
+        "timestamp": "2026-01-14T18:12:41.909539",
         "execution_id": "20260111_194622",
         "config": {
             "MAX_ENCODER_LENGTH": 168,
@@ -96,7 +96,30 @@
         "failed_trials": 0
     },
     "cross_validation": {
-        "status": "skipped or not available"
+        "status": "completed",
+        "n_folds": 5,
+        "metrics": {
+            "mean_mape": "34.5597",
+            "std_mape": "25.176052",
+            "mean_mae": 3.2737986564636232,
+            "std_mae": 1.8456995412509025,
+            "mean_rmse": 5.855040778561056,
+            "std_rmse": 2.8569854782803263
+        },
+        "fold_maes": [
+            3.516599655151367,
+            6.5769267082214355,
+            2.647656202316284,
+            2.6531894207000732,
+            0.9746212959289551
+        ],
+        "fold_rmses": [
+            6.492101418559127,
+            10.87921692217982,
+            4.755786984497828,
+            4.906234449617076,
+            2.2418641179514323
+        ]
     },
     "final_model": {
         "status": "completed",
@@ -128,20 +151,17 @@
     },
     "validation_results": {
         "status": "completed",
-        "total_metrics": {
-            "mae": 0.9744537472724915,
-            "rmse": 2.2416443914656283,
-            "r2": 0.9795815348625183,
-            "mape_raw": "75.67353",
-            "mape_masked": "51.09598",
-            "valid_points_mape": "2",
+        "metrics": {
+            "mae": 0.9746212959289551,
+            "rmse": 2.2418641179514323,
+            "r2": 0.9795775413513184,
+            "mape_raw": "75.58071",
+            "mape_masked": "37.533356",
+            "valid_points_mape": "3",
             "total_points": 24
         },
-        "n_predictions": 24,
-        "step_metrics_summary": {
-            "best_step_mse": "0.0",
-            "worst_step_mse": "89.2039"
-        }
+        "best_fold_idx": 4,
+        "fold_number": 5
     },
     "interpretability": {
         "status": "completed",
@@ -182,7 +202,7 @@
         {
             "path": "results\\run_corretta\\comprehensive_report.json",
             "description": "This comprehensive report",
-            "size_mb": 0.007231712341308594
+            "size_mb": 0.007370948791503906
         },
         {
             "path": "results\\run_corretta\\figures",
