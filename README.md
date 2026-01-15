@@ -270,6 +270,7 @@ CONFIG = {
 ## Future Developments
 
 ### Short-term Improvements
+- **Data Normalization Techniques**: Evaluate alternatives to current `softplus` transformation (standard, min-max, robust scaling) to improve early-horizon prediction accuracy
 - **Expanded Hyperparameter Search**: Increase from 5 to 50+ Optuna trials for better optimization
 - **Inceease the Dataset Size**: From 17000 sample to at least 100k for effective use of TFT's capabilities. 
 - **Enhanced Weather Features**: Integrate satellite imagery, cloud movement patterns, and weather forecasts
