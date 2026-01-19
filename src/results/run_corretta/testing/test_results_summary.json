@@ -5,7 +5,7 @@
     "n_predictions": 205656,
     "n_windows": 8569,
     "horizon_hours": 24,
-    "evaluation_date": "2026-01-18 16:14:18",
+    "evaluation_date": "2026-01-19 11:41:31",
     "model_checkpoint": "results\\run_corretta\\models\\best_tft_fold_5.ckpt"
   },
   "metrics": {
