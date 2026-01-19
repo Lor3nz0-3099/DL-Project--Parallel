@@ -1,19 +1,19 @@
 {
   "metadata": {
-    "test_period": "2012-07-01 00:00:00 \u2192 2013-06-30 23:00:43.290000",
+    "test_period": "2012-07-01 00:00:00 \u2192 2013-06-30 23:00:00",
     "n_samples": 8760,
     "n_predictions": 205656,
     "n_windows": 8569,
     "horizon_hours": 24,
-    "evaluation_date": "2026-01-19 11:41:31",
+    "evaluation_date": "2026-01-19 12:48:53",
     "model_checkpoint": "results\\run_corretta\\models\\best_tft_fold_5.ckpt"
   },
   "metrics": {
-    "mae": 4.749174118041992,
-    "rmse": 10.020461701436762,
-    "r2": 0.7121317386627197,
-    "mape_masked": 47.80205154418945,
-    "mase_seasonal_24h": 1.0970450124971511,
+    "mae": 4.749142673705197,
+    "rmse": 8.670742190529307,
+    "r2": -0.9166896962997084,
+    "mape_masked": 52.632057189941406,
+    "mase_seasonal_24h": 1.0970376325840372,
     "mae_seasonal_baseline": 4.329060397651026
   },
   "data_info": {
