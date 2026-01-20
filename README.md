@@ -319,14 +319,8 @@ This highlights opportunities for improvement through:
 ### Short-term Improvements
 - **Data Normalization Techniques**: Evaluate alternatives to current `softplus` transformation (standard, min-max, robust scaling) to improve early-horizon prediction accuracy
 - **Expanded Hyperparameter Search**: Increase from 5 to 50+ Optuna trials for better optimization
-- **Inceease the Dataset Size**: From 17000 sample to at least 100k for effective use of TFT's capabilities. 
+- **Increase the Dataset Size**: From 17000 sample to at least 100k for effective use of TFT's capabilities. 
 - **Enhanced Weather Features**: Integrate satellite imagery, cloud movement patterns, and weather forecasts
-
-### Advanced Research Directions
-- **Ensemble Methods**: Combine TFT with other time series models (LSTM, Prophet, N-BEATS)
-- **Transfer Learning**: Pre-train on large-scale solar datasets and fine-tune for specific installations
-- **Probabilistic Forecasting**: Enhanced uncertainty quantification with distributional regression
-- **Explainable AI**: Advanced SHAP/LIME integration for stakeholder-friendly model explanations
 
 ### Technical Enhancements
 - **Distributed Training**: Multi-GPU training with data parallelism for larger datasets
